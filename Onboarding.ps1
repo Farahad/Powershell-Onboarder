@@ -255,8 +255,8 @@ if ($otherprog.checked) {
 
 if ($renamepc.Checked) {
     if ($qrename.Checked) {
-        $qname = $rename + "-" + $cname
-        Rename-Computer -NewName $qname.Text
+        $qname = $rename.Text + "-" + $cname
+        Rename-Computer -NewName $qname
     }
     else {
     Rename-Computer -NewName $rename.Text
